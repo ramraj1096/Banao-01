@@ -1,10 +1,19 @@
 export default function Hero() {
   return (
     <section className="Hero-section">
-      <div className="hero position-relative">
+      <div
+        className="hero position-relative"
+        style={{
+          backgroundImage: "url('./images/rect1.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          height: "75vh",
+        }}
+      >
         <div
           className="hei-dis"
-          style={{ position: "absolute", background: "black", opacity: 0.6 }}
+          style={{ position: "absolute", background: "black", opacity: 0.6, width: "100%", height: "100%" }}
         ></div>
         <div className="position-absolute hei-dis text-start pb5">
           <div className="container hei-dis d-flex justify-content-end align-items-start flex-column space">
@@ -26,9 +35,7 @@ export default function Hero() {
               <div className="fs-2 fw-bold" style={{ color: "white" }}>
                 Computer Science and Engineering
               </div>
-              <p style={{ color: "white" }}>
-                142,765 people follow this
-              </p>
+              <p style={{ color: "white" }}>142,765 people follow this</p>
             </div>
           </div>
         </div>
